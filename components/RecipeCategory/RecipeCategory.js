@@ -14,7 +14,7 @@ function slugifyCategory(category){
     return slugify(category).toLowerCase();
 }
 
-export default function RecipeCategory({category, recipeList, maxElements = 3}){
+export default function RecipeCategory({category, recipeList, maxElements = 30}){
     const recipes = recipeList.filter(recipe => recipe.category === category).slice(0, maxElements);
 
     return(

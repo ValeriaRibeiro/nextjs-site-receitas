@@ -20,8 +20,6 @@ export async function getStaticPaths(){
             }
         }
     })
-    
-
     return {paths, fallback: false};
 }
 
@@ -40,7 +38,6 @@ export default function RecipeCategoryPage({recipes = []}){
     if(recipes.length === 0){
         return <div>Nenhuma Receita</div>
     }
-
     return(
         <div>
             <Header title={`TreinaCook - ${recipes[0].category}`}/>

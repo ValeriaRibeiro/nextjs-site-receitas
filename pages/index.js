@@ -6,7 +6,7 @@ import RecipeCategory from '../components/RecipeCategory/RecipeCategory';
 
 
 export async function getStaticProps(context){
-  const totalItems = 30;
+  const totalItems = 12;
   const recipes = (await RecipeService.listAll()).slice(0, totalItems);
   return {
     props: {
